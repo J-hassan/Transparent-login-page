@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .7);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.wrapper{
+    width: 400px;
+    background: transparent;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .4);
+}
+
+h1{
+    text-align: center;
+}
+
+.input-box{
+    width: 100%;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgba(255, 255, 255, .2);
+    padding: 10px;
+    color: white;
+    text-indent: 5px;
+}
+
+.input-box i{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+
+.remember-forget{
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+}
+.remember-forget :where(.input-box,label){
+    cursor: pointer;
+}
+.remember-forget a{
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+button{
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    width: 50%;
+    margin: auto;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .2);
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+button:active{
+    transform: scale(0.9);
+}
+
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.register a{
+    text-decoration: none;
+    color: white;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+
